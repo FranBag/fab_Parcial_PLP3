@@ -14,7 +14,7 @@ CREATE TABLE fab_productos (
     nombre_producto VARCHAR(150) NOT NULL,
     descripcion TEXT,
     precio DECIMAL(10, 2) NOT NULL,
-    imagen_url VARCHAR(255) DEFAULT 'fab_assets/images/default.jpg',
+    imagen_url VARCHAR(255) DEFAULT './fab_assets/images/default.jpg',
     id_categoria INT,
     CONSTRAINT fk_prod_categoria FOREIGN KEY (id_categoria) REFERENCES fab_categorias(id_categoria)
 );
